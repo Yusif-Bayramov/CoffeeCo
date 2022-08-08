@@ -28,6 +28,10 @@
 
         this.descriptions2 = newSlider.querySelectorAll('.circular-slider .wrapper2 .descriptions2 .descriptions__item2');
 
+        this.descriptionsHolder3 = newSlider.querySelector('.circular-slider .wrapper3 .descriptions3');
+
+        this.descriptions3 = newSlider.querySelectorAll('.circular-slider .wrapper3 .descriptions3 .descriptions__item3');
+
         this.slidesHolder = newSlider.querySelector('.circular-slider .wrapper .slides-holder');
 
         this.btnLeft = newSlider.querySelector('.circular-slider .wrapper .controls .controls__left');
@@ -172,6 +176,7 @@
 
         this.descriptions[x].classList.remove('descriptions__item_visible');
         this.descriptions2[x].classList.remove('descriptions__item_visible2');
+        this.descriptions3[x].classList.remove('descriptions__item_visible3');
         this.slides[x].classList.remove('slides-holder__item_active');
         this.slides[x].style.height = this.slides[x].style.width = this.slidesSize + 'px';
 
@@ -183,6 +188,7 @@
 
         this.descriptions[x].classList.add('descriptions__item_visible');
         this.descriptions2[x].classList.add('descriptions__item_visible2');
+        this.descriptions3[x].classList.add('descriptions__item_visible3');
         this.slides[x].classList.add('slides-holder__item_active');
         this.slides[x].style.height = this.slides[x].style.width = this.slidesSize + 20 + 'px';
 
