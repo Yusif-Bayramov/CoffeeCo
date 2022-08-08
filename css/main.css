@@ -199,7 +199,6 @@ table {
     position: relative;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    overflow: hidden;
     width: 100% !important;
     color: aliceblue;
 }
@@ -589,7 +588,7 @@ body {
         display: none;
     }
     .circular-slider .wrapper {
-        right: 14.5px;
+        right: 1.5px;
     }
 }
 
