@@ -433,6 +433,14 @@ body {
     .circular-slider .wrapper {
         top: 0;
     }
+    .wrapper {
+        width: 360px !important;
+        height: 180px !important;
+    }
+    .slides-holder {
+        height: 306px !important;
+        width: 306px !important;
+    }
 }
 
 
