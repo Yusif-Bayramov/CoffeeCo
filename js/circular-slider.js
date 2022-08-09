@@ -226,7 +226,13 @@
     //////////////////////
 
 })();
+let dropdown = document.querySelector(".dropbtn");
+let mydropdown = document.querySelector(".dropdown-content");
 
+dropdown.addEventListener("click", () => {
+    mydropdown.classList.toggle("show")
+    dropdown.classList.toggle("active")
+});
 const menuBtn = document.querySelector(".menu-icon span");
 const searchBtn = document.querySelector(".search-icon");
 const cancelBtn = document.querySelector(".cancel-icon");

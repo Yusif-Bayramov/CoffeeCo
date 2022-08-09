@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
 html,
 body,
 div,
@@ -394,7 +402,7 @@ table {
 }
 
 .descriptions img {
-    width: 50%;
+    width: 40%;
 }
 
 .circular-slider .wrapper .slides-holder__item {
@@ -598,14 +606,6 @@ body {
 
 /*nav*/
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
-
 ul {
     list-style: none;
 }
@@ -760,7 +760,75 @@ nav .cancel-icon {
     display: none;
 }
 
-@media (max-width: 1180px) {
+
+/*dropdown*/
+
+.dropdown {
+    margin-left: 15px;
+}
+
+.dropdown i {
+    color: #333333;
+}
+
+.dropdown img {
+    width: 35px;
+    height: 35px;
+}
+
+.dropdown .az {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dropdown .az img {
+    margin-right: 3px;
+}
+
+.dropdown .rus {
+    cursor: pointer;
+}
+
+.dropbtn {
+    cursor: pointer;
+    transition: all 0.35s ease-in-out !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 6px;
+    transition: all 0.35s ease-in-out !important;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content-2.show {
+    display: block;
+}
+
+.dropbtn.active {
+    transform: rotate(180deg);
+}
+
+.dropbtn-2.active {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1415px) {
     nav {
         padding: 0px;
     }
