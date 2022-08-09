@@ -226,6 +226,7 @@
     //////////////////////
 
 })();
+
 const menuBtn = document.querySelector(".menu-icon span");
 const searchBtn = document.querySelector(".search-icon");
 const cancelBtn = document.querySelector(".cancel-icon");

@@ -590,6 +590,9 @@ body {
     .circular-slider .wrapper {
         right: 1.5px;
     }
+    .descriptions img {
+        width: 30%;
+    }
 }
 
 
@@ -620,80 +623,6 @@ header {
     position: relative;
 }
 
-#head {
-    background-image: url(../img/headbg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-}
-
-#head .text {
-    flex-basis: 50%;
-    color: #fff;
-}
-
-#head .head-container {
-    flex-basis: 50%;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#head .head-container .cofe-c {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-    clip-path: circle();
-    overflow: hidden;
-}
-
-#head .head-container .cofe-c .img1 {
-    position: relative;
-    top: 125px;
-    overflow: hidden;
-}
-
-#head .head-container .cofe-c .img2 {
-    position: absolute;
-    top: 76%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease-in-out;
-}
-
-#head .head-container .cofe-c .img2 .coffe-1 {
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-}
-
-#head .head-container .cofe-c .img2 .coffe-1.active {
-    display: none;
-    transform: scale(0);
-}
-
-#head .head-container .cofe-c .img2 .coffe-2 {
-    display: none;
-    transform: scale(0);
-    transition: all 0.3s ease-in-out;
-}
-
-#head .head-container .cofe-c .img2 .coffe-2.active {
-    display: block;
-    transform: scale(1);
-}
-
-#head .head-container .cofe-c img {
-    max-width: 100%;
-}
-
 nav {
     width: 100%;
     position: fixed;
@@ -704,11 +633,13 @@ nav {
     height: 70px;
     padding: 0 100px;
     /* From https://css.glass */
-    background: rgba(52, 38, 38, 0.48);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(13px);
-    -webkit-backdrop-filter: blur(13px);
-    z-index: 99;
+    background-image: url(../img/b3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.163);
+    z-index: 999;
 }
 
 nav .nav-items {
@@ -720,9 +651,14 @@ nav .nav-items li {
 }
 
 nav .nav-items li a {
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.235em;
+    text-transform: uppercase;
+    color: #221E1F;
     transition: color 0.3s ease-in-out;
     position: relative;
 }
@@ -744,15 +680,21 @@ nav .nav-items li a::after {
     transition: opacity 0.3s ease-in-out;
 }
 
-nav .nav-items li a:hover::after {
-    opacity: 1;
+nav .nav-items li a.active {
+    font-weight: 600;
 }
 
-nav .logo a {
-    font-size: 30px;
+nav .nav-items li a:hover {
     font-weight: 600;
-    letter-spacing: -1px;
-    color: #fff;
+}
+
+nav .nav-items li a:hover::after {
+    opacity: 1;
+    font-weight: 600;
+}
+
+nav .logo a img {
+    max-width: 100%;
 }
 
 nav form {
@@ -767,23 +709,37 @@ nav form .search-data {
     height: 100%;
     width: 100%;
     padding: 0 10px;
-    background: none;
-    border: none;
-    border: 1px solid rgba(155, 155, 155, 0.133);
-    color: #fff;
+    background: rgba(186, 186, 186, 0.3);
+    border: 1px solid #BABABA;
+    backdrop-filter: blur(6px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 50px;
+    color: #221E1F;
     font-weight: 500;
     outline: 0;
     font-size: 17px;
 }
 
+nav form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav form input {
+    padding-left: 45px !important;
+    position: relative;
+}
+
 nav form button {
+    position: absolute;
     padding: 0 15px;
-    background: #ff3d00;
     border: none;
     cursor: pointer;
     font-size: 17px;
     color: #fff;
-    border-radius: 2px;
+    border-radius: 50px;
+    background: none;
 }
 
 nav .menu-icon,
@@ -827,7 +783,7 @@ nav .cancel-icon {
         z-index: 1;
         margin: -18px 0 0;
         border: 10px solid transparent;
-        border-bottom-color: rgba(52, 38, 38, 0.48);
+        border-bottom-color: rgb(255, 255, 255);
     }
     nav form::after {
         position: absolute;
@@ -838,13 +794,14 @@ nav .cancel-icon {
         padding: 2px;
         width: calc(100% + 20px);
         /* From https://css.glass */
-        background: rgba(52, 38, 38, 0.48);
+        background: rgb(255, 255, 255);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(13px);
         -webkit-backdrop-filter: blur(13px);
         z-index: -1;
         border-radius: 2px;
         transform: translate(-50%, -50%);
+        border-radius: 5px;
     }
     nav form.active {
         opacity: 1;
