@@ -6,6 +6,23 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #F1BC6C;
+}
+
 html,
 body,
 div,
@@ -737,7 +754,7 @@ nav form button {
     border: none;
     cursor: pointer;
     font-size: 17px;
-    color: #fff;
+    color: #221E1F66;
     border-radius: 50px;
     background: none;
 }
@@ -758,74 +775,6 @@ nav .menu-icon span,
 nav .search-icon,
 nav .cancel-icon {
     display: none;
-}
-
-
-/*dropdown*/
-
-.dropdown {
-    margin-left: 15px;
-}
-
-.dropdown i {
-    color: #333333;
-}
-
-.dropdown img {
-    width: 35px;
-    height: 35px;
-}
-
-.dropdown .az {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.dropdown .az img {
-    margin-right: 3px;
-}
-
-.dropdown .rus {
-    cursor: pointer;
-}
-
-.dropbtn {
-    cursor: pointer;
-    transition: all 0.35s ease-in-out !important;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    margin-top: 6px;
-    transition: all 0.35s ease-in-out !important;
-}
-
-.dropdown a:hover {
-    background-color: #ddd;
-}
-
-.dropdown-content.show {
-    display: block;
-}
-
-.dropdown-content-2.show {
-    display: block;
-}
-
-.dropbtn.active {
-    transform: rotate(180deg);
-}
-
-.dropbtn-2.active {
-    transform: rotate(180deg);
 }
 
 @media (max-width: 1415px) {
@@ -950,5 +899,168 @@ nav .cancel-icon {
     }
     nav form {
         right: 20px;
+    }
+}
+
+
+/*dropdown*/
+
+.dropdown {
+    margin-left: 15px;
+}
+
+.dropdown i {
+    color: #333333;
+}
+
+.dropdown img {
+    width: 35px;
+    height: 35px;
+}
+
+.dropdown .az {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dropdown .az img {
+    margin-right: 3px;
+}
+
+.dropdown .rus {
+    cursor: pointer;
+}
+
+.dropbtn {
+    cursor: pointer;
+    transition: all 0.35s ease-in-out !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 6px;
+    transition: all 0.35s ease-in-out !important;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content-2.show {
+    display: block;
+}
+
+.dropbtn.active {
+    transform: rotate(180deg);
+}
+
+.dropbtn-2.active {
+    transform: rotate(180deg);
+}
+
+
+/*MAIN SECTION*/
+
+main {
+    width: 100%;
+}
+
+main .menu-box {
+    width: 100%;
+}
+
+.menu-box .menu-head-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.menu-box .menu-head-text img {
+    max-width: 100%;
+}
+
+.menu-box .menu-head-text h1 {
+    font-family: 'Courgette' !important;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 193.9%;
+    /* or 116px */
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+.menu-box-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    overflow-x: scroll;
+}
+
+.menu-box-icon a {
+    transition: all .3s ease-in-out;
+}
+
+.menu-box-icon a:hover {
+    opacity: 0.7;
+}
+
+.icons-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-box-icon .icons-item img {
+    max-width: 100%;
+}
+
+.menu-box-icon .icons-item h5 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 193.9%;
+    /* identical to box height, or 39px */
+    color: #221E1F;
+}
+
+@media (max-width: 1118px) {
+    .menu-box .menu-head-text h1 {
+        font-size: 25px;
+    }
+    .menu-box-icon {
+        gap: 45px;
+        overflow: scroll;
+    }
+    .menu-box-icon::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .menu-box-icon::-webkit-scrollbar {
+        width: 2px;
+        background-color: transparent;
+    }
+    .menu-box-icon::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #F1BC6C;
     }
 }
