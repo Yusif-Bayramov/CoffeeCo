@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
     margin: 0;
@@ -1001,11 +1002,11 @@ main .menu-box {
     gap: 10px;
 }
 
-.menu-box .menu-head-text img {
+.menu-head-text img {
     max-width: 100%;
 }
 
-.menu-box .menu-head-text h1 {
+.menu-head-text h1 {
     font-family: 'Courgette' !important;
     font-weight: 400;
     font-size: 60px;
@@ -1126,7 +1127,7 @@ main .menu-box {
 
 .menu-card-container .card-item .card-text {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(102.08deg, #000000 -3.43%, rgba(0, 0, 0, 0) 100%);
-    border: 1.8633px solid rgba(255, 255, 255, 0.7);
+    border: 1.8633px solid rgb(255, 255, 255);
     border-bottom-left-radius: 14.9064px;
     border-bottom-right-radius: 14.9064px;
     color: #ffff;
@@ -1140,4 +1141,70 @@ main .menu-box {
 .menu-card-container .card-item .card-text hr {
     width: 90%;
     background-color: #ffff;
+}
+
+
+/*xeberler-card-container*/
+
+.xeberler-container {
+    margin-top: 80px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.xeberler-card-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.xeberler-card-container .xeber-card-item {
+    width: 367px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.xeber-card-item:hover img {
+    filter: saturate(1);
+}
+
+.xeber-card-item .xeber-card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.xeber-card-item img {
+    transition: all .3s ease-in-out;
+    filter: saturate(0);
+    max-width: 100%;
+}
+
+.xeber-card-item .xeber-card-text {
+    padding: 10px;
+}
+
+.xeber-card-text h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 131.5%;
+    /* or 26px */
+    letter-spacing: 0.18em;
+    color: #36697E;
+}
+
+.xeber-card-text p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    color: #333333;
 }
