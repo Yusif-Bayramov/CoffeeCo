@@ -1464,6 +1464,9 @@ ul.social-network a {
     ul.social-network a {
         margin-bottom: 10px;
     }
+    #Menu .menu-head-text {
+        padding: 45px 0;
+    }
 }
 
 
@@ -1476,4 +1479,8 @@ main {
 #Menu {
     width: 100%;
     margin-top: 70px;
+}
+
+#Menu .menu-head-text {
+    padding: 25px 0;
 }
