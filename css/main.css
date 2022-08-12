@@ -994,7 +994,7 @@ main .menu-box {
     width: 100%;
 }
 
-.menu-box .menu-head-text {
+.menu-head-text {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1435,7 +1435,7 @@ ul.social-network a {
 }
 
 @media (max-width: 1118px) {
-    .menu-box .menu-head-text h1 {
+    .menu-head-text h1 {
         font-size: 25px;
     }
     .menu-box-icon {
@@ -1464,4 +1464,16 @@ ul.social-network a {
     ul.social-network a {
         margin-bottom: 10px;
     }
+}
+
+
+/*menu-ic-seyfe*/
+
+main {
+    width: 100%;
+}
+
+#Menu {
+    width: 100%;
+    margin-top: 70px;
 }
