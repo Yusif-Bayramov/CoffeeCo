@@ -1586,6 +1586,18 @@ main {
     gap: 15px;
 }
 
+.xeber-img-box3 h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 131.5%;
+    /* or 59px */
+    letter-spacing: 0.18em;
+    color: #333333;
+    text-align: center;
+}
+
 .xeberBox {
     width: 100%;
     display: flex;
