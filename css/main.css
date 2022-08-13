@@ -913,6 +913,9 @@ nav .cancel-icon {
     nav form {
         right: 20px;
     }
+    .footer-pad h4 {
+        margin-top: 10px;
+    }
 }
 
 
