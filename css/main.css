@@ -1149,6 +1149,14 @@ main .menu-box {
     filter: saturate(1);
 }
 
+.xeber-card-item img {
+    max-width: 367px;
+    height: 369.47px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 .xeber-card-item .xeber-card-img {
     width: 100%;
     height: 100%;
@@ -1280,7 +1288,6 @@ footer {
     width: 100%;
     background: #fff;
     color: rgba(51, 51, 51, 0.7);
-    margin-top: 100px;
 }
 
 footer a {
@@ -1468,6 +1475,7 @@ main {
 #Menu {
     width: 100%;
     margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 #Menu .menu-head-text {
@@ -1480,6 +1488,7 @@ main {
 #xeber {
     width: 100%;
     margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 #xeber img {
@@ -1563,4 +1572,93 @@ main {
     .xeberBox a:nth-child(n+1)::after {
         font-size: 25px;
     }
+    .icBox-item-1 h2 {
+        font-size: 20px;
+    }
+    .col-xl-8 h1 {
+        font-size: 35px !important;
+    }
+    .col-xl-4 {
+        margin-top: 0 !important;
+    }
+}
+
+
+/*xeber-ic-sehife*/
+
+#xeber-ic-sehife {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+#xeber-ic-sehife img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#xeber-ic-sehife .row {
+    align-items: center;
+    justify-content: center;
+}
+
+#xeber-ic-sehife .icbox-img {
+    max-width: 664px;
+    height: 668.47px;
+}
+
+#xeber-ic-sehife .icbox-img img {
+    border-radius: 15px;
+}
+
+#xeber-ic-sehife .xeber-card-item img {
+    max-width: 367px;
+    height: 369.47px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.col-xl-8 h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 131.5%;
+    /* or 66px */
+    letter-spacing: 0.18em;
+    color: #36697E;
+}
+
+.col-xl-8 .tarix {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+    /* identical to box height */
+    color: #949494;
+    padding: 10px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.col-xl-8 .tarix i {
+    color: #949494;
+}
+
+.col-xl-8 .icBox-text {
+    max-width: 664px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.col-xl-4 {
+    margin-top: 180px;
 }
