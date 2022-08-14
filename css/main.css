@@ -1244,49 +1244,6 @@ main .menu-box {
 }
 
 
-/*MAP*/
-
-.map-container {
-    width: 100%;
-    height: 439.5px;
-}
-
-.map-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.map-container .map-img {
-    position: relative;
-    height: 439.5px;
-}
-
-.map-container h1 {
-    position: absolute;
-    max-width: 867.35px;
-    height: 439.5px;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg, #F1BC6C 67.74%, rgba(241, 188, 108, 0) 100%);
-    text-align: center;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 131.5%;
-    /* or 53px */
-    text-align: center;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 50px;
-}
-
-
 /*footer*/
 
 footer {
@@ -1457,10 +1414,6 @@ ul.social-network a {
     }
     .menu-box-icon .icons-item img {
         max-width: 70%;
-    }
-    .map-container h1 {
-        font-size: 20px;
-        background: linear-gradient(90deg, #F1BC6C 45.74%, rgba(241, 188, 108, 0) 100%);
     }
     ul.social-network a {
         margin-bottom: 10px;
