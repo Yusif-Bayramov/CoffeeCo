@@ -1714,3 +1714,197 @@ main {
         padding: 0 0 15px 0;
     }
 }
+
+
+/*Karyera*/
+
+#Karyera {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+#Karyera .karyera-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding: 45px 0;
+    background: rgba(244, 196, 130, 0.8);
+}
+
+.karyera-box .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.karyera-box .vakansiya-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vk-box-head {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 132.4%;
+    /* or 58px */
+    letter-spacing: 0.12em;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.vakansiya-text i {
+    margin-right: 5px;
+    color: #333333;
+}
+
+.boxs-item h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 132.4%;
+    /* identical to box height, or 37px */
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+.vakansiya-tex p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 132.4%;
+    /* identical to box height, or 24px */
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+#Karyera .basvuru-box {
+    flex-basis: 50%;
+    padding: 45px 120px;
+    background: rgba(185, 109, 74, 0.8);
+}
+
+.basvuru-box .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.basvuru-head {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 132.4%;
+    /* or 58px */
+    text-align: center;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.basvuru-box input {
+    margin-bottom: 30px;
+}
+
+.basvuru-box button {
+    margin-top: 30px;
+}
+
+.basvuru-box label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 132.4%;
+    /* identical to box height, or 37px */
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+}
+
+.file-upload__input {
+    display: none;
+}
+
+.file-upload__button {
+    -webkit-appearance: none;
+    background: #F4C482;
+    border: 2px solid #F4C482;
+    border-radius: 27.6119px;
+    outline: none;
+    padding: 0.5em 2.5em;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.1493px;
+    line-height: 15px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: rgba(51, 51, 51, 0.53);
+}
+
+.fa-paperclip {
+    color: #fff;
+    font-size: 1.3em;
+    margin-right: 5px;
+}
+
+.file-upload__button:active {
+    background: #00745d;
+}
+
+.file-upload__label {
+    max-width: 250px;
+    font-size: 0.95em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "Quicksand", sans-serif;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container button {
+    background: #F4C482;
+    border-radius: 40.0876px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.6386px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #333333;
+    padding: 0.5em 2.5em;
+}
+
+@media (max-width: 1308px) {
+    #Karyera .karyera-box {
+        flex-basis: 100%;
+    }
+    #Karyera .basvuru-box {
+        flex-basis: 100%;
+        padding: 45px 0;
+    }
+}
