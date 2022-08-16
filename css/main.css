@@ -386,30 +386,6 @@ table {
     transform: translate(0%, -50%);
 }
 
-.circular-slider .wrapper .controls__autoplay {
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-}
-
-.circular-slider .wrapper .controls__autoplay_running .pause {
-    display: block;
-}
-
-.circular-slider .wrapper .controls__autoplay_running .run {
-    display: none;
-}
-
-.circular-slider .wrapper .controls__autoplay_paused .pause {
-    display: none;
-}
-
-.circular-slider .wrapper .controls__autoplay_paused .run {
-    display: block;
-}
-
 .circular-slider .wrapper .slides-holder {
     border-radius: 50%;
     border: 2px dashed #ffffff;
@@ -1087,7 +1063,7 @@ main .menu-box {
 }
 
 .menu-card-container .card-item {
-    width: 300px;
+    max-width: 300px;
     height: 420px;
     background: linear-gradient(0deg, rgb(241, 188, 108), rgb(241, 188, 108)), linear-gradient(102.08deg, #000000 -3.43%, rgba(0, 0, 0, 0) 100%);
     border: 1.8633px solid rgb(255, 255, 255);
@@ -1144,7 +1120,7 @@ main .menu-box {
 }
 
 .xeberler-card-container .xeber-card-item {
-    width: 367px;
+    max-width: 367px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -2054,5 +2030,21 @@ main {
         justify-content: center;
         gap: 50px;
         flex-direction: column;
+    }
+    .elaqe-item ul.list-unstyled {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .elaqe-item .list-unstyled li a {
+        font-size: 16px;
+    }
+    .elaqe-box {
+        padding-top: 280px;
+    }
+    .menu-head-text img {
+        width: 50px;
+        max-width: 100%;
     }
 }
