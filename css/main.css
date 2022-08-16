@@ -580,35 +580,6 @@ body {
     flex-wrap: wrap;
 }
 
-@media (max-width: 2000px) {
-    .circular-slider .wrapper2 {
-        height: 350px;
-    }
-    .circular-slider .wrapper {
-        top: 0;
-    }
-    .wrapper {
-        width: 360px;
-        height: 180px;
-    }
-    .slides-holder {
-        height: 306px;
-        width: 306px;
-    }
-}
-
-@media (max-width: 1500px) {
-    .circular-slider .wrapper3 {
-        display: none;
-    }
-    .circular-slider .wrapper {
-        right: 1.5px;
-    }
-    .descriptions img {
-        width: 38%;
-    }
-}
-
 
 /*nav*/
 
@@ -764,136 +735,6 @@ nav .menu-icon span,
 nav .search-icon,
 nav .cancel-icon {
     display: none;
-}
-
-@media (max-width: 1415px) {
-    nav {
-        padding: 0px;
-    }
-    nav form {
-        position: absolute;
-        top: 80px;
-        right: 57px;
-        opacity: 0;
-        pointer-events: none;
-        transition: top 0.3s ease, opacity 0.1s ease;
-        z-index: 99;
-    }
-    nav form::before {
-        position: absolute;
-        content: "";
-        top: -13px;
-        right: 0;
-        width: 0;
-        height: 0;
-        z-index: 1;
-        margin: -18px 0 0;
-        border: 10px solid transparent;
-        border-bottom-color: rgb(255, 255, 255);
-    }
-    nav form::after {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        content: "";
-        height: 60px;
-        padding: 2px;
-        width: calc(100% + 20px);
-        /* From https://css.glass */
-        background: rgb(255, 255, 255);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(13px);
-        -webkit-backdrop-filter: blur(13px);
-        z-index: -1;
-        border-radius: 2px;
-        transform: translate(-50%, -50%);
-        border-radius: 5px;
-    }
-    nav form.active {
-        opacity: 1;
-        top: 95px;
-        pointer-events: auto;
-    }
-    nav .nav-items {
-        position: fixed;
-        z-index: 999;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        /* From https://css.glass */
-        background: rgba(52, 38, 38, 0.605);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(18.1px);
-        -webkit-backdrop-filter: blur(18.1px);
-        display: inline-block;
-        padding: 75px 50px 0 50px;
-        text-align: center;
-        transition: left 0.3s ease;
-    }
-    nav .nav-items.active {
-        left: 0%;
-    }
-    nav .nav-items li {
-        line-height: 40px;
-        margin: 30px 0;
-    }
-    nav .nav-items li a {
-        color: #ffff;
-        font-size: 25px;
-    }
-    nav .nav-items li a::after {
-        color: #ffff;
-        top: 35px;
-    }
-    nav .logo {
-        flex: 2;
-        text-align: center;
-    }
-    nav .menu-icon {
-        display: block;
-        transition: transform 0.3s ease-in-out;
-    }
-    nav .menu-icon:hover {
-        transform: scale(1.5);
-    }
-    nav .search-icon,
-    nav .cancel-icon {
-        transition: transform 0.3s ease-in-out;
-    }
-    nav .search-icon:hover,
-    nav .cancel-icon:hover {
-        transform: scale(1.5);
-    }
-    nav .search-icon,
-    nav .menu-icon span {
-        display: block;
-    }
-    nav .search-icon.hide,
-    nav .menu-icon span.hide {
-        display: none;
-    }
-    nav .cancel-icon.show {
-        display: block;
-    }
-}
-
-@media (max-width: 500px) {
-    nav .menu-icon,
-    nav .search-icon,
-    nav .cancel-icon {
-        margin: 0 10px;
-        font-size: 16px;
-    }
-    nav .logo a {
-        font-size: 20px;
-    }
-    nav form {
-        right: 20px;
-    }
-    .footer-pad h4 {
-        margin-top: 10px;
-    }
 }
 
 
@@ -1219,6 +1060,18 @@ main .menu-box {
     background: #ffffff;
 }
 
+.carousel-item {
+    max-width: 565px;
+    height: 400px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
 
 /*footer*/
 
@@ -1502,21 +1355,6 @@ main {
     content: "Qaliblərlə təbtiklər";
 }
 
-@media (max-width: 1200px) {
-    .xeberBox a:nth-child(n+1)::after {
-        font-size: 25px;
-    }
-    .icBox-item-1 h2 {
-        font-size: 20px;
-    }
-    .col-xl-8 h1 {
-        font-size: 35px !important;
-    }
-    .col-xl-4 {
-        margin-top: 0 !important;
-    }
-}
-
 
 /*xeber-ic-sehife*/
 
@@ -1635,15 +1473,6 @@ main {
     object-fit: cover;
     float: right;
     padding: 0 0 0 10px;
-}
-
-@media (max-width: 770px) {
-    .contenf .haqqimizda-img {
-        padding: 0 0 15px 0;
-    }
-    .contenf .haqqimizda-img2 {
-        padding: 0 0 15px 0;
-    }
 }
 
 
@@ -2000,6 +1829,192 @@ main {
 .elaqe-box-btn:hover {
     background: #49859D;
     color: #fff;
+}
+
+
+/*@media*/
+
+@media (max-width: 2000px) {
+    .circular-slider .wrapper2 {
+        height: 350px;
+    }
+    .circular-slider .wrapper {
+        top: 0;
+    }
+    .wrapper {
+        width: 360px;
+        height: 180px;
+    }
+    .slides-holder {
+        height: 306px;
+        width: 306px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .circular-slider .wrapper3 {
+        display: none;
+    }
+    .circular-slider .wrapper {
+        right: 1.5px;
+    }
+    .descriptions img {
+        width: 38%;
+    }
+}
+
+@media (max-width: 1415px) {
+    nav {
+        padding: 0px;
+    }
+    nav form {
+        position: absolute;
+        top: 80px;
+        right: 57px;
+        opacity: 0;
+        pointer-events: none;
+        transition: top 0.3s ease, opacity 0.1s ease;
+        z-index: 99;
+    }
+    nav form::before {
+        position: absolute;
+        content: "";
+        top: -13px;
+        right: 0;
+        width: 0;
+        height: 0;
+        z-index: 1;
+        margin: -18px 0 0;
+        border: 10px solid transparent;
+        border-bottom-color: rgb(255, 255, 255);
+    }
+    nav form::after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        content: "";
+        height: 60px;
+        padding: 2px;
+        width: calc(100% + 20px);
+        /* From https://css.glass */
+        background: rgb(255, 255, 255);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+        z-index: -1;
+        border-radius: 2px;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+    }
+    nav form.active {
+        opacity: 1;
+        top: 95px;
+        pointer-events: auto;
+    }
+    nav .nav-items {
+        position: fixed;
+        z-index: 999;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        /* From https://css.glass */
+        background: rgba(52, 38, 38, 0.605);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(18.1px);
+        -webkit-backdrop-filter: blur(18.1px);
+        display: inline-block;
+        padding: 75px 50px 0 50px;
+        text-align: center;
+        transition: left 0.3s ease;
+    }
+    nav .nav-items.active {
+        left: 0%;
+    }
+    nav .nav-items li {
+        line-height: 40px;
+        margin: 30px 0;
+    }
+    nav .nav-items li a {
+        color: #ffff;
+        font-size: 25px;
+    }
+    nav .nav-items li a::after {
+        color: #ffff;
+        top: 35px;
+    }
+    nav .logo {
+        flex: 2;
+        text-align: center;
+    }
+    nav .menu-icon {
+        display: block;
+        transition: transform 0.3s ease-in-out;
+    }
+    nav .menu-icon:hover {
+        transform: scale(1.5);
+    }
+    nav .search-icon,
+    nav .cancel-icon {
+        transition: transform 0.3s ease-in-out;
+    }
+    nav .search-icon:hover,
+    nav .cancel-icon:hover {
+        transform: scale(1.5);
+    }
+    nav .search-icon,
+    nav .menu-icon span {
+        display: block;
+    }
+    nav .search-icon.hide,
+    nav .menu-icon span.hide {
+        display: none;
+    }
+    nav .cancel-icon.show {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    nav .menu-icon,
+    nav .search-icon,
+    nav .cancel-icon {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    nav .logo a {
+        font-size: 20px;
+    }
+    nav form {
+        right: 20px;
+    }
+    .footer-pad h4 {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 770px) {
+    .contenf .haqqimizda-img {
+        padding: 0 0 15px 0;
+    }
+    .contenf .haqqimizda-img2 {
+        padding: 0 0 15px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .xeberBox a:nth-child(n+1)::after {
+        font-size: 25px;
+    }
+    .icBox-item-1 h2 {
+        font-size: 20px;
+    }
+    .col-xl-8 h1 {
+        font-size: 35px !important;
+    }
+    .col-xl-4 {
+        margin-top: 0 !important;
+    }
 }
 
 @media (max-width: 1308px) {
