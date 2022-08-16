@@ -293,7 +293,7 @@ table {
     width: 150px;
     background-color: #B96D4A;
     border-radius: 50px;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in;
     z-index: 5;
 }
 
@@ -1865,12 +1865,165 @@ main {
     color: #333333;
     padding: 0.5em 2.5em;
     margin-top: 30px;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in;
 }
 
 .button-container button:hover {
     color: #fff;
     background: #49859D
+}
+
+
+/*ELAQE*/
+
+#elaqes {
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
+}
+
+.container-position::after {
+    content: "";
+    width: 100%;
+    max-width: 100%;
+    height: 534.1px;
+    background: linear-gradient(90deg, #F1BC6C 35.74%, rgba(241, 188, 108, 0) 50%), url(../img/coffeeMap.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.elaqe-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 250px;
+}
+
+.teklif-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: 742.28px;
+    background: #F4C482;
+    border-radius: 40px 0px 0px 0px;
+    padding-right: 100px;
+    padding-left: 25px;
+    padding-top: 35px;
+}
+
+.teklif-box label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.222px;
+    line-height: 132.4%;
+    /* or 25px */
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+.elaqe-box h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32.5px;
+    line-height: 132.4%;
+    /* identical to box height, or 53px */
+    letter-spacing: 0.12em;
+    color: #333333;
+}
+
+.elaqe-item h2 {
+    color: #ffffff;
+}
+
+.teklif-box h2 {
+    margin-bottom: 25px;
+}
+
+.teklif-box input {
+    margin-bottom: 15px;
+}
+
+.elaqe-item {
+    flex-basis: 50%;
+    height: 742.28px;
+    background: #B96D4A;
+    border-radius: 0px 40px 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 35px;
+}
+
+.elaqe-item .container {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.elaqe-item .list-unstyled li {
+    margin-bottom: 50px;
+}
+
+.elaqe-item .list-unstyled li:last-child {
+    margin-bottom: 0;
+}
+
+.elaqe-item .list-unstyled {
+    margin-bottom: 65px;
+}
+
+.elaqe-item .list-unstyled li a img {
+    margin-right: 10px;
+}
+
+.elaqe-item .social-network li a {
+    font-size: 29px;
+}
+
+.elaqe-item ul.social-network a {
+    width: 43px;
+    height: 43px;
+    background-color: #F4C482;
+}
+
+.elaqe-item ul.social-network a i {
+    color: #B96D4A;
+}
+
+.elaqe-item .list-unstyled li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.6137px;
+    line-height: 132.4%;
+    /* identical to box height, or 29px */
+    letter-spacing: 0.12em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.elaqe-box-btn {
+    margin-top: 50px;
+    border: none;
+    padding: 0.6rem 2.8rem;
+    background: rgba(185, 109, 74, 0.81);
+    border-radius: 40.0876px;
+    color: #fff;
+    transition: all .3s ease-in;
+}
+
+.elaqe-box-btn:hover {
+    background: #49859D;
+    color: #fff;
 }
 
 @media (max-width: 1308px) {
@@ -1880,5 +2033,26 @@ main {
     #Karyera .basvuru-box {
         flex-basis: 100%;
         padding: 45px 0;
+    }
+    .teklif-box {
+        flex-basis: 100%;
+        height: 742.28px;
+        background: #F4C482;
+        border-radius: 0 0 0 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .elaqe-item {
+        flex-basis: 100%;
+        height: 742.28px;
+        background: #B96D4A;
+        border-radius: 0 0 0 0;
+    }
+    .elaqe-item .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
     }
 }
