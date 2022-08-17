@@ -31,7 +31,11 @@ searchBtn.onclick = () => {
     searchBtn.classList.add("hide");
     cancelBtn.classList.add("show");
 }
+const coffee_cup_loading = document.querySelector(".coffee_cup_loading");
 
+setTimeout(() => {
+    coffee_cup_loading.style.display = "none"
+}, 2000);
 
 (function() {
     'use strict';
