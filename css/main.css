@@ -2205,6 +2205,9 @@ display table:after {
         margin-top: 55px;
         right: 14.5px;
     }
+    .slider {
+        margin-top: 65px;
+    }
 }
 
 @media (max-width: 370px) {
