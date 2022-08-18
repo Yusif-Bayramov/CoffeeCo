@@ -2196,22 +2196,19 @@ display table:after {
 
 @media (max-width: 350px) {
     .circular-slider .wrapper {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 340px) {
-    .circular-slider .wrapper {
         margin-top: 55px;
         right: 14.5px;
-    }
-    .slider {
-        margin-top: 95px;
     }
 }
 
 @media (max-width: 370px) {
     .circular-slider .wrapper {
-        right: 14.5px;
+        right: 5.5;
+    }
+}
+
+@media (max-width: 380px) {
+    .slider {
+        margin-top: 95px;
     }
 }
