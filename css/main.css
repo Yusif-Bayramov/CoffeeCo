@@ -615,7 +615,7 @@ nav {
     background-size: cover;
     background-attachment: fixed;
     border-bottom: 1px solid rgba(0, 0, 0, 0.163);
-    z-index: 999;
+    z-index: 1000;
 }
 
 nav .nav-items {
@@ -915,6 +915,7 @@ main .menu-box {
     flex-direction: column;
     transition: all .3s ease;
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .menu-card-container .card-item:hover {
@@ -1487,13 +1488,44 @@ main {
 
 #Karyera .karyera-box {
     width: 100%;
+    height: 1155.66px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-basis: 50%;
     flex-direction: column;
     padding: 45px 0;
     background: rgba(244, 196, 130, 0.8);
+    overflow-y: scroll;
+}
+
+#Karyera .karyera-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#Karyera .karyera-box::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+#Karyera .karyera-box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #F1BC6C;
+}
+
+.vakansiya-box {
+    background-color: #fff;
+    max-width: 100%;
+    width: 450px;
+    height: 100px;
+    padding: 25px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
 }
 
 .karyera-box .container {
@@ -1518,7 +1550,6 @@ main {
     font-weight: 600;
     font-size: 44px;
     line-height: 132.4%;
-    /* or 58px */
     letter-spacing: 0.12em;
     color: #333333;
     margin-bottom: 25px;
@@ -2211,4 +2242,96 @@ display table:after {
     .slider {
         margin-top: 100px;
     }
+}
+
+main .products-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    z-index: 999;
+}
+
+main .products-preview .preview {
+    width: 390px;
+    max-width: 100%;
+    height: 450px;
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(241, 188, 108), rgb(241, 188, 108)), linear-gradient(102.08deg, #000000 -3.43%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+    border-radius: 5px;
+}
+
+main .products-preview .preview .products-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+}
+
+main .products-preview .preview img {
+    width: 355.26px;
+    max-width: 100%;
+    height: 177.77px;
+    object-fit: contain;
+}
+
+main .products-preview .preview .card-prices {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .products-preview .preview .card-prices h4 {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.1783px;
+    line-height: 23px;
+    color: #000000;
+}
+
+main .products-preview .preview .card-prices h5 {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.6198px;
+    line-height: 29px;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+
+main .products-preview .preview p {
+    width: 70%;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.8421px;
+    line-height: 16px;
+    text-align: left;
+    color: #000000;
+}
+
+main .products-preview .preview.active {
+    display: inline-block;
+}
+
+main .products-preview .preview .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
 }
