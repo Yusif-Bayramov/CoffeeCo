@@ -1988,7 +1988,8 @@ display table:after {
         right: 1.5px;
     }
     .descriptions img {
-        width: 38%;
+        margin-top: 27px;
+        width: 40%;
     }
 }
 
