@@ -1937,6 +1937,102 @@ display table:after {
     animation: steam 1s linear infinite alternate;
 }
 
+
+/*Pop-Up*/
+
+main .products-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    z-index: 999;
+}
+
+main .products-preview .preview {
+    width: 390px;
+    max-width: 100%;
+    height: 450px;
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(241, 188, 108), rgb(241, 188, 108)), linear-gradient(102.08deg, #000000 -3.43%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+    border-radius: 5px;
+}
+
+main .products-preview .preview .products-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+}
+
+main .products-preview .preview img {
+    width: 355.26px;
+    max-width: 100%;
+    height: 177.77px;
+    object-fit: contain;
+}
+
+main .products-preview .preview .card-prices {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .products-preview .preview .card-prices h4 {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 23px;
+    color: #000000;
+}
+
+main .products-preview .preview .card-prices h5 {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.6198px;
+    line-height: 29px;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+
+main .products-preview .preview p {
+    width: 70%;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 16px;
+    text-align: left;
+    color: #000000;
+    margin-top: 10px;
+}
+
+main .products-preview .preview.active {
+    display: inline-block;
+}
+
+main .products-preview .preview .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
 @-webkit-keyframes steam {
     0% {
         height: 0px;
@@ -2242,96 +2338,4 @@ display table:after {
     .slider {
         margin-top: 100px;
     }
-}
-
-main .products-preview {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 100vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    z-index: 999;
-}
-
-main .products-preview .preview {
-    width: 390px;
-    max-width: 100%;
-    height: 450px;
-    display: none;
-    padding: 2rem;
-    text-align: center;
-    background: linear-gradient(0deg, rgb(241, 188, 108), rgb(241, 188, 108)), linear-gradient(102.08deg, #000000 -3.43%, rgba(0, 0, 0, 0) 100%);
-    position: relative;
-    border-radius: 5px;
-}
-
-main .products-preview .preview .products-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    flex-direction: column;
-}
-
-main .products-preview .preview img {
-    width: 355.26px;
-    max-width: 100%;
-    height: 177.77px;
-    object-fit: contain;
-}
-
-main .products-preview .preview .card-prices {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-main .products-preview .preview .card-prices h4 {
-    font-family: "Segoe UI";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17.1783px;
-    line-height: 23px;
-    color: #000000;
-}
-
-main .products-preview .preview .card-prices h5 {
-    font-family: "Segoe UI";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21.6198px;
-    line-height: 29px;
-    display: flex;
-    align-items: flex-end;
-    color: #fff;
-}
-
-main .products-preview .preview p {
-    width: 70%;
-    font-family: "Segoe UI";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11.8421px;
-    line-height: 16px;
-    text-align: left;
-    color: #000000;
-}
-
-main .products-preview .preview.active {
-    display: inline-block;
-}
-
-main .products-preview .preview .fa-times {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
 }
