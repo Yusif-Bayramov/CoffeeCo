@@ -43,6 +43,7 @@ setTimeout(() => {
 let preveiwContainer = document.querySelector('.products-preview')
 let previewBox = preveiwContainer.querySelectorAll('.preview')
 
+
 document.querySelectorAll('.card-item').forEach((product) => {
     product.onclick = () => {
         preveiwContainer.style.display = 'flex'
@@ -69,6 +70,9 @@ window.onclick = function(event) {
             close.classList.remove('active')
             preveiwContainer.style.display = 'none'
         })
+    }
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 
 }
