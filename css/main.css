@@ -7,12 +7,13 @@
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
 }
-
+:root {
+    --bg: #282526;
+    --text: #fefefe; 
+    --box-color: #d2ae6d;
+  }
 .bg {
-    background-image: url(../img/b3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-color: var(--bg);
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -23,12 +24,12 @@
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background-color: #F5F5F5;
+    background-color: var(--bg);
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
-    background-color: #F5F5F5;
+    width: 10px;
+    background-color: var(--bg);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -246,10 +247,8 @@ table {
     font-weight: 400;
     font-size: 60px;
     line-height: 100%;
-    /* or 60px */
     letter-spacing: 0.12em;
-    color: #B96D4A;
-    /* Inside auto layout */
+    color: var(--box-color);
 }
 
 .descriptions__item2 .desc-head-text {
@@ -258,9 +257,8 @@ table {
     font-weight: 400;
     font-size: 60px;
     line-height: 100%;
-    /* or 60px */
     letter-spacing: 0.12em;
-    color: #DA9C40;
+    color: var(--box-color);
 }
 
 .descriptions__item2 h2 {
@@ -269,20 +267,17 @@ table {
     font-weight: 500;
     font-size: 45px;
     line-height: 141.4%;
-    /* identical to box height, or 64px */
-    color: #221E1F;
-    /* Inside auto layout */
+    color: var(--text);
 }
 
 .descriptions__item2 p {
+    width: 90%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 180%;
-    /* or 32px */
-    color: #221E1F;
-    /* Inside auto layout */
+    color: #fefefe;
 }
 
 .descriptions__item2 .desc-btns {
@@ -290,23 +285,16 @@ table {
     padding: 10px 0;
     text-align: center;
     width: 150px;
-    background-color: #B96D4A;
+    background-color: var(--box-color);
     border-radius: 50px;
     transition: all .3s ease-in;
     z-index: 5;
 }
 
+
+
 .descriptions__item2 .desc-btns:hover {
-    color: #B96D4A;
-    background-color: #fff;
-}
-
-.descriptions__item2 .desc-btns2 {
-    background-color: #DA9C40;
-}
-
-.descriptions__item2 .desc-btns2:hover {
-    color: #DA9C40;
+    color: var(--box-color);
     background-color: #fff;
 }
 
@@ -330,7 +318,7 @@ table {
 .circular-slider .wrapper .controls__left i,
 .circular-slider .wrapper .controls__right i {
     color: #fff;
-    background-color: #B96D4A;
+    background-color: var(--bg);
     padding: 5px 10px;
     border-radius: 50%;
     text-align: center;
@@ -597,6 +585,7 @@ a {
 header {
     width: 100%;
     position: relative;
+   
 }
 
 nav {
@@ -609,13 +598,9 @@ nav {
     height: 70px;
     padding: 0 100px;
     /* From https://css.glass */
-    background-image: url(../img/b3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.163);
+   background-color: var(--bg);
     z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.107) 0px 1.5px 1.5px 0px;
 }
 
 nav .nav-items {
@@ -634,7 +619,7 @@ nav .nav-items li a {
     line-height: 15px;
     letter-spacing: 0.235em;
     text-transform: uppercase;
-    color: #221E1F;
+    color: var(--text);
     transition: color 0.3s ease-in-out;
     position: relative;
 }
@@ -686,11 +671,11 @@ nav form .search-data {
     width: 100%;
     padding: 0 10px;
     background: rgba(186, 186, 186, 0.3);
-    border: 1px solid #BABABA;
+    border: 1px solid var(--bg);
     backdrop-filter: blur(6px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 50px;
-    color: #221E1F;
+    color: var(--text);
     font-weight: 500;
     outline: 0;
     font-size: 17px;
@@ -713,7 +698,7 @@ nav form button {
     border: none;
     cursor: pointer;
     font-size: 17px;
-    color: #221E1F66;
+    color: var(--text);
     border-radius: 50px;
     background: none;
 }
@@ -722,7 +707,7 @@ nav .menu-icon,
 nav .search-icon,
 nav .cancel-icon {
     width: 40px;
-    color: #221E1F;
+    color: var(--text);
     text-align: center;
     margin: 0 50px;
     font-size: 18px;
@@ -744,7 +729,7 @@ nav .cancel-icon {
 }
 
 .dropdown i {
-    color: #333333;
+   color: var(--text);
 }
 
 .dropdown img {
@@ -835,7 +820,7 @@ main .menu-box {
     line-height: 193.9%;
     /* or 116px */
     letter-spacing: 0.12em;
-    color: #333333;
+   color: var(--text);
 }
 
 .menu-box-icon {
@@ -873,7 +858,7 @@ main .menu-box {
     font-size: 20px;
     line-height: 193.9%;
     /* identical to box height, or 39px */
-    color: #221E1F;
+    color: var(--text);
 }
 
 
@@ -905,8 +890,8 @@ main .menu-box {
 .menu-card-container .card-item {
     max-width: 300px;
     height: 420px;
-    background: linear-gradient(0deg, rgb(241, 188, 108), rgb(241, 188, 108)), linear-gradient(102.08deg, #000000 -3.43%, rgba(0, 0, 0, 0) 100%);
-    border: 1.8633px solid rgb(255, 255, 255);
+  background-color: var(--box-color);
+ 
     border-radius: 14.9064px;
     text-align: center;
     display: flex;
@@ -925,7 +910,6 @@ main .menu-box {
 
 .menu-card-container .card-item .card-text {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(102.08deg, #000000 -3.43%, rgba(0, 0, 0, 0) 100%);
-    border: 1.8633px solid rgb(255, 255, 255);
     border-bottom-left-radius: 14.9064px;
     border-bottom-right-radius: 14.9064px;
     color: #ffff;
@@ -962,7 +946,7 @@ main .menu-box {
 
 .xeberler-card-container .xeber-card-item {
     max-width: 367px;
-    background-color: #fff;
+    background-color: var(--box-color);
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -1002,13 +986,13 @@ main .menu-box {
     line-height: 131.5%;
     /* or 26px */
     letter-spacing: 0.18em;
-    color: #36697E;
+    color: var(--text);
 }
 
 .xeber-card-text p {
     font-weight: 500;
     font-size: 14px;
-    color: #333333;
+   color: var(--text);
 }
 
 
@@ -1032,11 +1016,12 @@ main .menu-box {
     line-height: 131.5%;
     /* or 33px */
     letter-spacing: 0.18em;
-    color: #214858;
+    color: var(--text);
 }
 
 .why-us-container .why-text p {
     font-weight: 500;
+    color: var(--text);
 }
 
 .why-text .whyUs-btn {
@@ -1050,14 +1035,14 @@ main .menu-box {
     /* or 28px */
     color: #FFFFFF;
     padding: 10px 35px;
-    background: #B96D4A;
+    background-color: var(--box-color);
     border-radius: 50px;
     transition: all .3s ease-in-out;
 }
 
 .why-text .whyUs-btn:hover {
-    color: #B96D4A;
-    background: #ffffff;
+    color: var(--box-color);
+    background: var(--text);
 }
 
 .carousel-item {
@@ -1077,12 +1062,12 @@ main .menu-box {
 
 footer {
     width: 100%;
-    background: #fff;
-    color: rgba(51, 51, 51, 0.7);
+    background: var(--bg);
+    color: var(--text);
 }
 
 footer a {
-    color: rgba(51, 51, 51, 0.7);
+    color: var(--text);
     font-size: 14px;
     transition-duration: 0.2s;
     font-family: 'Montserrat';
@@ -1093,9 +1078,13 @@ footer a {
     /* identical to box height, or 23px */
     letter-spacing: 0.12em;
 }
-
+footer a i{
+    color: var(--box-color);
+    font-size: 18px;
+    margin-right: 5px;
+}
 footer a:hover {
-    color: rgb(51, 51, 51);
+    color: rgb(183, 182, 182);
     text-decoration: none;
 }
 
@@ -1109,13 +1098,13 @@ footer a:hover {
     line-height: 15px;
     /* identical to box height */
     letter-spacing: 0.335em;
-    color: rgba(51, 51, 51, 0.4);
-    background-color: #fff;
+    color: var(--text);
+   
 }
 
 .footer-middle {
     padding-top: 2em;
-    color: rgba(51, 51, 51, 0.7);
+    color: var(--text);
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -1134,7 +1123,7 @@ footer a:hover {
     line-height: 132.4%;
     /* or 24px */
     letter-spacing: 0.12em;
-    color: rgba(51, 51, 51, 0.7);
+    color: var(--text);
 }
 
 .footer-pad .elaqe-text {
@@ -1158,7 +1147,7 @@ ul.social-network li {
 }
 
 ul.social-network a {
-    background: #F4C482;
+    background: var(--box-color);
 }
 
 .social-network a i {
@@ -1220,11 +1209,13 @@ ul.social-network a {
 .social-network a {
     background-color: #F9F9F9;
 }
-
-@media (max-width: 1118px) {
+@media (max-width: 1055px){
     .menu-head-text h1 {
         font-size: 25px;
     }
+}
+@media (max-width: 1118px) {
+    
     .menu-box-icon {
         gap: 45px;
         overflow-x: scroll;
@@ -1268,7 +1259,9 @@ main {
 #Menu .menu-head-text {
     padding: 25px 0;
 }
-
+.img-rotate{
+    transform: skew(10deg);
+}
 
 /*xeberler*/
 
@@ -1400,7 +1393,7 @@ main {
     line-height: 131.5%;
     /* or 66px */
     letter-spacing: 0.18em;
-    color: #36697E;
+    color: var(--text);
 }
 
 .col-xl-8 .tarix {
@@ -1428,7 +1421,7 @@ main {
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
-    color: #000000;
+    color: var(--text);
 }
 
 .col-xl-4 {
@@ -1463,7 +1456,7 @@ main {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    color: #000000;
+    color: var(--text);
 }
 
 .contenf .haqqimizda-img2 {
@@ -1494,7 +1487,7 @@ main {
     flex-basis: 50%;
     flex-direction: column;
     padding: 45px 0;
-    background: rgba(244, 196, 130, 0.8);
+    background: #F1BC6C;
     overflow-y: scroll;
 }
 
@@ -1552,13 +1545,13 @@ main {
     font-size: 44px;
     line-height: 132.4%;
     letter-spacing: 0.12em;
-    color: #333333;
+   color: var(--text);
     margin-bottom: 25px;
 }
 
 .vakansiya-text i {
     margin-right: 5px;
-    color: #333333;
+    color: var(--bg);
 }
 
 .boxs-item h2 {
@@ -1569,7 +1562,7 @@ main {
     line-height: 132.4%;
     /* identical to box height, or 37px */
     letter-spacing: 0.12em;
-    color: #333333;
+   color: var(--bg);
     text-align: center;
 }
 
@@ -1582,7 +1575,7 @@ main {
     line-height: 132.4%;
     /* identical to box height, or 24px */
     letter-spacing: 0.12em;
-    color: #333333;
+   color: var(--text);
 }
 
 #Karyera .basvuru-box {
@@ -1698,7 +1691,7 @@ main {
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.08em;
-    color: #333333;
+   color: var(--text);
     padding: 0.5em 2.5em;
     margin-top: 30px;
     transition: all .3s ease-in;
@@ -1903,7 +1896,7 @@ main {
     line-height: 132.4%;
     /* or 25px */
     letter-spacing: 0.12em;
-    color: #333333;
+   color: var(--text);
 }
 
 .elaqe-box h2 {
@@ -1914,13 +1907,16 @@ main {
     line-height: 132.4%;
     /* identical to box height, or 53px */
     letter-spacing: 0.12em;
-    color: #333333;
+   color: var(--text);
 }
 
 .elaqe-item h2 {
     color: #ffffff;
 }
-
+.elaqe-item li a i{
+    margin-right: 5px;
+    color: rgba(244, 196, 130, 1);
+}
 .teklif-box h2 {
     margin-bottom: 25px;
 }
@@ -1932,7 +1928,7 @@ main {
 .elaqe-item {
     flex-basis: 50%;
     height: 742.28px;
-    background: #B96D4A;
+    background-color: rgb(185, 109, 74);
     border-radius: 0px 40px 0px 0px;
     display: flex;
     justify-content: flex-start;
@@ -2017,7 +2013,7 @@ main {
     top: 0;
     left: 0;
     text-align: center;
-    background-color: #fff;
+    background-color: #000000;
     z-index: 9999;
 }
 
@@ -2283,7 +2279,7 @@ main .products-preview .preview .fa-times {
         z-index: 1;
         margin: -18px 0 0;
         border: 10px solid transparent;
-        border-bottom-color: rgb(255, 255, 255);
+        border-bottom-color: var(--bg);
     }
     nav form::after {
         position: absolute;
@@ -2294,8 +2290,8 @@ main .products-preview .preview .fa-times {
         padding: 2px;
         width: calc(100% + 20px);
         /* From https://css.glass */
-        background: rgb(255, 255, 255);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        background: var(--bg);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
         backdrop-filter: blur(13px);
         -webkit-backdrop-filter: blur(13px);
         z-index: -1;
@@ -2436,7 +2432,7 @@ main .products-preview .preview .fa-times {
     .elaqe-item {
         flex-basis: 100%;
         height: 742.28px;
-        background: #B96D4A;
+        background-color: var(--box-color);
         border-radius: 0 0 0 0;
     }
     .elaqe-item .container {
