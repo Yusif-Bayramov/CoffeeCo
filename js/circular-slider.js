@@ -41,7 +41,7 @@ setTimeout(() => {
 
 
 let preveiwContainer = document.querySelector('.products-preview')
-let previewBox = preveiwContainer.querySelectorAll('.preview')
+let previewBox = preveiwContainer?.querySelectorAll('.preview')
 
 
 document.querySelectorAll('.card-item').forEach((product) => {
@@ -57,7 +57,7 @@ document.querySelectorAll('.card-item').forEach((product) => {
     }
 })
 
-previewBox.forEach((close) => {
+previewBox?.forEach((close) => {
     close.querySelector('.fa-times').onclick = () => {
         close.classList.remove('active')
         preveiwContainer.style.display = 'none'
