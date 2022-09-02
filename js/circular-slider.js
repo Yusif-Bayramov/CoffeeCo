@@ -65,6 +65,7 @@ previewBox?.forEach((close) => {
 })
 window.onclick = function(event) {
     let preveiwContainer = document.querySelector('.products-preview')
+    var modal = document?.getElementById("myModal");
     if (event.target == preveiwContainer) {
         previewBox.forEach((close) => {
             close.classList.remove('active')
