@@ -350,13 +350,7 @@ table {
     background-color: #fff;
 }
 
-.circular-slider .wrapper3 {
-    position: absolute;
-    left: 0;
-    top: -28px;
-    box-sizing: border-box;
-    width: 100% !important;
-}
+
 
 .circular-slider .wrapper .controls__left,
 .circular-slider .wrapper .controls__right {
@@ -412,10 +406,6 @@ table {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-
-.circular-slider .wrapper .controls__left:hover {
-    
 }
 
 .circular-slider .wrapper .controls__right {
@@ -529,28 +519,7 @@ table {
     transition: opacity 0s 0s linear;
 }
 
-.circular-slider .wrapper3 .descriptions__item3 {
-    position: absolute;
-    top: 350px;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-transition: opacity 0s 0s linear;
-    -o-transition: opacity 0s 0s linear;
-    transition: opacity 0s 0s linear;
-}
+
 
 .circular-slider .wrapper .descriptions__item_visible {
     height: 100%;
@@ -568,13 +537,6 @@ table {
     transition: opacity .6s 0s linear;
 }
 
-.circular-slider .wrapper3 .descriptions__item_visible3 {
-    height: 100%;
-    opacity: 1;
-    -webkit-transition: opacity .6s 0s linear;
-    -o-transition: opacity .6s 0s linear;
-    transition: opacity .6s 0s linear;
-}
 
 .circular-slider .wrapper .descriptions__item h1,
 .circular-slider .wrapper .descriptions__item .description {
@@ -597,14 +559,7 @@ table {
     overflow-y: hidden;
 }
 
-.circular-slider .wrapper3 .descriptions__item3 .description2 {
-    font-size: 100%;
-    margin-top: 5px;
-    padding: 0% 10%;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow-y: hidden;
-}
+
 
 body {
     height: 100vh;
@@ -2397,9 +2352,7 @@ main .products-preview .preview .fa-times {
     nav .cancel-icon.show {
         display: block;
     }
-    .circular-slider .wrapper3 {
-        display: none;
-    }
+   
 }
 
 @media (max-width: 1117px){
