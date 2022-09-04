@@ -84,7 +84,7 @@
                                     <a href="./index-file/menyu.html" class="desc-btns desc-btns2">Ətraflı incələ</a>
                                 </div>
                                 <div class="descriptions__item2">
-                                    <h1 class="desc-head-text">Lorem ipsum</h1>
+                                    <h1>Lorem ipsum</h1>
                                     <p>Vətəni İtaliyadır. "Espresso" sözü "sizin üçün tez hazırlanır" deməkdir və hərfi mənada "tez" və ya "basılmış", "təzyiq altında bişirilmiş" kimi tərcümə edilə bilər.</p>
                                     <h2>3.00 ₼</h2>
                                     <a href="./index-file/menyu.html" class="desc-btns">Ətraflı incələ</a>
@@ -96,7 +96,7 @@
                                     <a href="./index-file/menyu.html" class="desc-btns desc-btns2">Ətraflı incələ</a>
                                 </div>
                                 <div class="descriptions__item2">
-                                    <h1 class="desc-head-text">Lorem ipsum</h1>
+                                    <h1>Lorem ipsum</h1>
                                     <p>Vətəni İtaliyadır. "Espresso" sözü "sizin üçün tez hazırlanır" deməkdir və hərfi mənada "tez" və ya "basılmış", "təzyiq altında bişirilmiş" kimi tərcümə edilə bilər.</p>
                                     <h2>3.00 ₼</h2>
                                     <a href="./index-file/menyu.html" class="desc-btns">Ətraflı incələ</a>
@@ -108,7 +108,7 @@
                                     <a href="./index-file/menyu.html" class="desc-btns desc-btns2">Ətraflı incələ</a>
                                 </div>
                                 <div class="descriptions__item2">
-                                    <h1 class="desc-head-text">Lorem ipsum</h1>
+                                    <h1>Lorem ipsum</h1>
                                     <p>Vətəni İtaliyadır. "Espresso" sözü "sizin üçün tez hazırlanır" deməkdir və hərfi mənada "tez" və ya "basılmış", "təzyiq altında bişirilmiş" kimi tərcümə edilə bilər.</p>
                                     <h2>3.00 ₼</h2>
                                     <a href="./index-file/menyu.html" class="desc-btns">Ətraflı incələ</a>
@@ -120,7 +120,7 @@
                                     <a href="./index-file/menyu.html" class="desc-btns desc-btns2">Ətraflı incələ</a>
                                 </div>
                                 <div class="descriptions__item2">
-                                    <h1 class="desc-head-text">Lorem ipsum</h1>
+                                    <h1>Lorem ipsum</h1>
                                     <p>Vətəni İtaliyadır. "Espresso" sözü "sizin üçün tez hazırlanır" deməkdir və hərfi mənada "tez" və ya "basılmış", "təzyiq altında bişirilmiş" kimi tərcümə edilə bilər.</p>
                                     <h2>3.00 ₼</h2>
                                     <a href="./index-file/menyu.html" class="desc-btns">Ətraflı incələ</a>
@@ -602,6 +602,9 @@
                 this.currentSlide = 0;
 
                 this.slidesHolder.style.transitionDuration = this.startSetup.animationDuration + 'ms';
+
+             
+                 
                 this.onResize();
 
                 this.setNav();
@@ -712,11 +715,15 @@
             Slider.prototype.setNav = function() {
 
                 let _this = this;
+                const circuleColor = document.querySelector(".slider");
                 _this.btnLeft.onclick = function() {
                     _this.rotate(1)
+                    circuleColor.classList.toggle("done")
                 };
                 _this.btnRight.onclick = function() {
                     _this.rotate(-1)
+                    circuleColor.classList.toggle("done")
+                   
                 };
 
             };
