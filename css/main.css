@@ -343,14 +343,10 @@ table {
     z-index: 5;
 }
 
-
-
 .descriptions__item2 .desc-btns:hover {
     color: var(--box-color);
     background-color: #fff;
 }
-
-
 
 .circular-slider .wrapper .controls__left,
 .circular-slider .wrapper .controls__right {
@@ -2460,6 +2456,9 @@ main .products-preview .preview .fa-times {
     }
     .slider::before{
      display: none;
+    }
+    .slider.done::before{
+        display: none;
     }
 }
 
