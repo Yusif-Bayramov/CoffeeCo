@@ -1159,6 +1159,11 @@ footer{
 .footer-main-logo-image {
 	height: 4rem;
 }
+.footer-main-logo a img{
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+}
 .footer-bottom-custom-row {
 	padding: 1rem 5rem;
 	align-items: center;
@@ -1189,6 +1194,10 @@ footer{
 	justify-content: flex-end;
 	text-decoration: none;
     color: #fff;
+    padding: 10px;
+}
+.logo-javachip-link img{
+    background-color: #fff;
 }
 .logo-javachip-link:hover{
     color: var(--box-color);
@@ -2241,7 +2250,59 @@ main .products-preview .preview .fa-times {
         height: 6px;
     }
 }
+  /* item list */
+  
+  .b{
+    display: none;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .open{
+    display: show !important;
+  }
+  
+  .btn-select{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 350px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: transparent;
+    border:none;
+    position: relative;
+  }
 
+  .lang-select i{
+    color: #ffff;
+    position: absolute;
+    top: 27px;
+    margin-left: 3px;
+   }
+
+  .btn-select li{
+    list-style: none;
+    float: left;
+    padding-bottom: 0px;
+  }
+  
+  .btn-select:hover li{
+    margin-left: 0px;
+  }
+  
+  .btn-select:focus{
+     outline:none;
+  }
+  
+  .lang-select{
+    margin-left: 20px;
+  }
+  .fa-chevron-down{
+    transition: all .3s ease-in-out;
+  }
+  .fa-chevron-down.active{
+    transform: rotate(180deg);
+  }
 
 /*@media*/
 @media (min-width: 2708px){
@@ -2407,7 +2468,10 @@ main .products-preview .preview .fa-times {
     nav .cancel-icon.show {
         display: block;
     }
-   
+    .lang-select i {
+        top: 14px;
+        margin-left: -50px;
+    }
 }
 
 @media (max-width: 1117px){
@@ -2544,3 +2608,33 @@ main .products-preview .preview .fa-times {
         margin-top: 100px;
     }
 }
+.vodiapicker{
+    display: none; 
+  }
+  
+  #a{
+    padding-left: 0px;
+  }
+  
+  #a img, .btn-select img{
+    width: 35px;
+    padding: 5px;
+  }
+
+
+  #a li{
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+  }
+  
+
+ #a{
+    margin-bottom: -54rem !important;
+  }
+
+  
+ 
+
+  

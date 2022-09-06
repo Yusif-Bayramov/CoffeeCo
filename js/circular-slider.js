@@ -1,10 +1,10 @@
-let dropdown = document.querySelector(".dropbtn");
-let mydropdown = document.querySelector(".dropdown-content");
+// let dropdown = document.querySelector(".dropbtn");
+// let mydropdown = document.querySelector(".dropdown-content");
 
-dropdown.addEventListener("click", () => {
-    mydropdown.classList.toggle("show")
-    dropdown.classList.toggle("active")
-});
+// dropdown.addEventListener("click", () => {
+//     mydropdown.classList.toggle("show")
+//     dropdown.classList.toggle("active")
+// });
 const menuBtn = document.querySelector(".menu-icon span");
 const searchBtn = document.querySelector(".search-icon");
 const cancelBtn = document.querySelector(".cancel-icon");
@@ -36,12 +36,6 @@ const coffee_cup_loading = document.querySelector(".coffee_cup_loading");
 setTimeout(() => {
     coffee_cup_loading.style.display = "none"
 }, 2000);
-
-
-
-
-
-
 
 let preveiwContainer = document.querySelector('.products-preview')
 let previewBox = preveiwContainer?.querySelectorAll('.preview')
@@ -79,4 +73,59 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 
+}
+var langArray = [];
+$(".vodiapicker option").each(function () {
+  var img = $(this).attr("data-thumbnail");
+  var text = this.innerText;
+  var value = $(this).val();
+  var item =
+    '<li><img src="' +
+    img +
+    '" alt="" value="' +
+    value +
+    '"/><span>' +
+    text +
+    "</span></li>";
+  langArray.push(item);
+});
+
+$("#a").html(langArray);
+
+//Set the button value to the first el of the array
+$(".btn-select").html(langArray[0]);
+$(".btn-select").attr("value", "en");
+
+//change button stuff on click
+$("#a li").click(function () {
+  var img = $(this).find("img").attr("src");
+  var value = $(this).find("img").attr("value");
+  var text = this.innerText;
+  var item =
+    '<li><img src="' + img + '" alt="" /><span>' + text + "</span></li>";
+  $(".btn-select").html(item);
+  $(".btn-select").attr("value", value);
+  $(".b").toggle();
+  //console.log(value);
+});
+
+$(".btn-select").click(function () {
+  $(".b").toggle();
+});
+$(".fa-chevron-down").click(function () {
+  $(".b").toggle();
+  this.classList.toggle("active");
+});
+//check local storage for the lang
+var sessionLang = localStorage.getItem("lang");
+if (sessionLang) {
+  //find an item with value of sessionLang
+  var langIndex = langArray.indexOf(sessionLang);
+  $(".btn-select").html(langArray[langIndex]);
+  $(".btn-select").attr("value", sessionLang);
+} else {
+  var langIndex = langArray.indexOf("ch");
+  console.log(langIndex);
+  $(".btn-select").html(langArray[langIndex]);
+  //$('.btn-select').attr('value', 'en');
 }
